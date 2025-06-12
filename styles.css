@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10% ;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 26px;
+    text-decoration:none;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 1s;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: red;
+}
+
+
+.home{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    padding: 0 10%;
+}
+
+.homecontent{
+    width: 70%;
+}
+
+.homecontent h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.homecontent h3{
+    font-size: 34px;
+    font-weight: 600;
+    color: red;
+    padding: 20px 0%;
+}
+
+.homecontent p{
+    font-size: 17px;
+    margin: 20px 0 40px;
+}
+
+.homecontent .btn-box{
+    height: 50px;
+    width: 345px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.btn-box a{
+    position: relative;
+    width: 150px;
+    height: 100%;
+    border: 4px solid red;
+    border-radius: 5px;
+    display: inline-flex;
+    font-size: 19px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-box a:nth-child(2){
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    transition: 1s;
+    }
+
+
+    .btn-box a:hover::before {
+    width: 100%;
+    }
+
+     .skill{
+        padding: 0 10%;
+    }
+
+    .skill h2{
+            font-size: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            color: red;
+    }
+
+    .skill li{
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+        margin-top: 25px;
+    }
+
+    .part2{
+        font-size: 20px;
+        background-color: black;
+    }
+
+    .image{
+        float:right;
+        padding: 0 10%;
+    }
+
+    .myknowlege{
+        justify-content:space-around;
+        display: flex;
+        padding: 0 10%;
+    }
+
+    .myknowlege img{
+        border-radius: 40%;
+        border: 10px solid red;
+        box-shadow: 15px 40px 30px  rgb(160, 78, 11);
+    }
+
+    .text{
+        font-size: 35px;
+        font-weight: 600;
+        text-decoration: none;
+        color:rgb(192, 41, 41)(255, 115, 0);
+        margin: 40px;
+        padding: 0 10%;
+    }
+
+    .myknowlege p{
+        align-items: flex-start;
+    }
+
+    .part2{
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .part2 img{
+        border-radius: 40%;
+        border: 10px solid red;
+        box-shadow: 15px 40px 30px  rgb(160, 78, 11);
+    }
+
+    .card img{
+        height: 300px;
+        width: 400px;
+        border-radius: 3px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card{
+        margin: 50px;
+        box-shadow: 5px 5px 5px orange;
+        overflow: hidden;
+    }
+
+    .certi h2{
+        font-size: 35px;
+        font-weight: 600;
+        color: red;
+        text-decoration: none;
+        padding: 0 10%;
+    }
+
+    .soft{
+        display: flex;
+        justify-content: center;
+    }
+
+.hard{
+    margin: 50px;
+    box-shadow: 5px 5px 5px orange;
+    overflow: hidden;
+}
+
+.completed{
+    display: flex;
+    justify-content: center;
+}
+
+.intern{
+    margin: 50px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.internimg{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+    .resumee{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10%;
+        margin-top: 30px;
+    }
+
+    .res{
+        padding: 0 10%;
+    }
+
+    .re{
+        font-size: 35px;
+        font-weight: 600;
+        text-decoration: none;
+        color: red;
+        padding: 0 10%;
+    }
+
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .button:hover{
+        background-color: red;
+    }
+
+    .table{
+        border-collapse: collapse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .head{
+        padding: 0 10%;
+        font-size: 35px;
+        font-weight: 600;
+        color: red;
+    }
+    .table td{
+        border: 1px solid rgb(255, 255, 255);
+        padding: 5px;
+    }
+    .table th{
+        border: 1px solid rgb(255, 255, 255);
+        padding: 5px;
+    }
